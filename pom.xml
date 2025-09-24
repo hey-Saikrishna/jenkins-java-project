@@ -49,6 +49,7 @@
 
     <build>
         <plugins>
+            <!-- Java 17 Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -56,6 +57,13 @@
                 <configuration>
                     <release>17</release>
                 </configuration>
+            </plugin>
+
+            <!-- WAR Packaging Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
             </plugin>
         </plugins>
     </build>
